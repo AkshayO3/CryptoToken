@@ -6,9 +6,9 @@ function Faucet() {
     const[buttonText, setButtonText] = React.useState("Gimme gimme");
 
   async function handleClick(event) {
-      const result=setDisabled(true);
+      setDisabled(true);
+      const result = await token.payOut();
       setButtonText(result);
-      await token.payOut();
   }
 
   return (
