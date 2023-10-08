@@ -68,7 +68,8 @@ actor Token {
     };
   };
 Debug.print("The task is completed");
-
+Debug.print("Final Balance:");
+Debug.print(debug_show(balance));
 };
 
 
