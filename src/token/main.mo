@@ -67,6 +67,7 @@ actor Token {
       balances.put(owner, totalSupply);
     };
   };
+Debug.print("The task is completed");
 
 };
 
